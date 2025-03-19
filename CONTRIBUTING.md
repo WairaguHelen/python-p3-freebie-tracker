@@ -1,38 +1,38 @@
-# Contributing to Learn.co Curriculum
+# Contributing to Freebie Tracker
 
-We're really exited that you're about to contribute to the [open
-curriculum](https://learn.co/content-license) on [Learn.co](https://learn.co).
-If this is your first time contributing, please continue reading to learn how to
-make the most meaningful and useful impact possible.
+Thank you for your interest in contributing to Freebie Tracker! This is welcome to help improve and enhance the project.
 
-## Raising an Issue to Encourage a Contribution
+## How to Contribute
 
-If you notice a problem with the curriculum that you believe needs improvement
-but you're unable to make the change yourself, you should raise a Github issue
-containing a clear description of the problem. Include relevant snippets of the
-content and/or screenshots if applicable. Curriculum owners regularly review
-issue lists and your issue will be prioritized and addressed as appropriate.
+### Reporting Issues
+If you have a feature request, notice an issue, or find a bug, please open a GitHub issue that includes:
+- A clear and descriptive title
+- Expected vs. actual behavior
+- Steps to reproduce the issue (if applicable)
+- Any relevant error messages or screenshots
 
-## Submitting a Pull Request to Suggest an Improvement
+### Submitting Pull Requests
+To submit a pull request:
+1. **Fork** the repository and clone it locally.
+2. Create a new branch: `git checkout -b feature-branch`.
+3. Make modifications and commit them with clear messages.
+4. Push the changes: `git push origin feature-branch`.
+5. Open a pull request against the `main` branch with a detailed description of your changes.
 
-If you see an opportunity for improvement and can make the change yourself go
-ahead and use a typical git workflow to make it happen:
+### Coding Guidelines
+- Follow the existing coding style.
+- Write clear and concise commit messages.
+- Ensure that your code does not introduce any new warnings or errors.
+- Add comments where necessary to explain complex logic.
 
-- Fork this curriculum repository
-- Make the change on your fork, with descriptive commits in the standard format
-- Open a Pull Request against this repo
+### Reviewing Process
+Once you submit a pull request:
+- A maintainer will review your code and provide feedback.
+- If necessary, make any requested changes and update your pull request.
+- Once approved, your changes will be merged into the main branch.
 
-A curriculum owner will review your change and approve or comment on it in due
-course.
+## License
+By contributing, you agree that your contributions will be licensed under the project's [MIT License](LICENSE).
 
-## Why Contribute?
+Thank you for helping make Freebie Tracker better!
 
-Curriculum on Learn is publicly and freely available under Learn's
-[Educational Content License](https://learn.co/content-license). By embracing an
-open-source contribution model, our goal is for the curriculum on Learn to
-become, in time, the best educational content the world has ever seen.
-
-We need help from the community of Learners to maintain and improve the
-educational content. Everything from fixing typos, to correcting out-dated
-information, to improving exposition, to adding better examples, to fixing
-tests—all contributions to making the curriculum more effective are welcome.
