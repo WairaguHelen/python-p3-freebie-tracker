@@ -25,6 +25,7 @@ class Company(Base):
         """Creates a new Freebie instance and associates it with a Dev and this Company."""
         new_freebie = Freebie(item_name=item_name, value=value, dev=dev, company=self)
         return new_freebie
+        
 
     @classmethod
     def oldest_company(cls, session):
@@ -54,6 +55,10 @@ class Dev(Base):
         return False
 
 class Freebie(Base):
+
+    def print_details(self):
+        return f"{self.dev.name} owns a {self.item_name} from {self.company.name}"
+    
     __tablename__ = 'freebies'
 
     id = Column(Integer(), primary_key=True)
