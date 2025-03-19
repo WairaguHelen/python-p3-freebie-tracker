@@ -4,38 +4,31 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from models import Company, Dev, Freebie, Base
 
-# Create the database connection
 engine = create_engine('sqlite:///freebies.db')
 Session = sessionmaker(bind=engine)
 session = Session()
 
-# Clear existing data
 session.query(Freebie).delete()
 session.query(Dev).delete()
 session.query(Company).delete()
 
-# Create sample companies
 company1 = Company(name="Cisco", founding_year=1984)
 company2 = Company(name="Apple", founding_year=1976)
 company3 = Company(name="Amazon", founding_year=1994)
 
-# Create sample developers
 dev1 = Dev(name="Helen")
 dev2 = Dev(name="Rose")
 dev3 = Dev(name="Anthony")
 
-# Create sample freebies
 freebie1 = Freebie(item_name="Backpack", value=50, dev=dev1, company=company1)
 freebie2 = Freebie(item_name="T-shirt", value=12, dev=dev2, company=company2)
 freebie3 = Freebie(item_name="Stickers", value=5, dev=dev3, company=company3)
 freebie4 = Freebie(item_name="Hoodie", value=10, dev=dev1, company=company3)
 freebie5 = Freebie(item_name="Notebook", value=15, dev=dev2, company=company1)
 
-# Add and commit changes
 session.add_all([company1, company2, company3, dev1, dev2, dev3, freebie1, freebie2, freebie3, freebie4, freebie5])
 session.commit()
 
-print("Database seeded successfully!")
+print("Successful Database Seeding!")
 
-# Close session
 session.close()
